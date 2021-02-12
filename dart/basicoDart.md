@@ -3,7 +3,7 @@
 ## Funciones 
 
 
-	Void main(){
+	void main(){
 		var mensaje = saludar();
 		print (mensaje);
 	}
@@ -107,33 +107,36 @@
 	
 ## Constructores con nombre:
 	
-	import "dart.convert";
+```
+import "dart:convert";
+
+
+void main(){
+	//final wolverine = new Heroe("Lagan", "Regeneración";
 	
-
-	void main(){
-		//final wolverine = new Heroe("Lagan", "Regeneración";
-		
-		final rawJson = '{ "nombre": "Logan", "Poder": "Regeneración" }';
-		
-		final parsedjson = json.decode( rawJson );
-		print( parsedjson ); // parsed json es un mapa
-
-		final wolverine = new Heroe.fromJson(parsedJson);
-
-		print(wolverine.nombre);
-		print(wolverine.poder);
-	}
-
-	class Heroe{
-		stirng nombre;
-		string poder;
-
-		Heroe(this.nombre, this.poder);
-		
-		Heroe.fromJson( Map parsedJson ){
-			nombre = parsedJson["nombre"];
-			poder = parsedJson["poder"];
-		}
-	}
+	final rawJson = '{ "nombre": "Logan", "poder": "Regeneración" }';
 	
+	final parsedJson = json.decode( rawJson );
+	print( parsedJson ); // parsed json es un mapa
+
+	final wolverine = new Heroe.fromJson(parsedJson);
+
+	print(wolverine.nombre);
+	print(wolverine.poder);
+}
+
+class Heroe{
+  String nombre;
+	String poder;
+
+	Heroe(this.nombre, this.poder);
+	
+	Heroe.fromJson( Map parsedJson ){
+		nombre = parsedJson["nombre"];
+		poder = parsedJson["poder"];
+	}
+}
+```
+
+
 
