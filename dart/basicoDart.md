@@ -57,7 +57,7 @@
 *creando clases:
 
 	void main(){
-		final wolverine = new Heroe( poder: "Regeneración"  ) // el new en dart es opcional de la versión 2 en adelante, en vez de var puede ser la clase Heroe, tambien un final que se parece a una cosntante
+		final wolverine = new Heroe( poder: "Regeneración"  ); // el new en dart es opcional de la versión 2 en adelante, en vez de var puede ser la clase Heroe, tambien un final que se parece a una cosntante
 		
 		print(wolverine);
 	}
@@ -75,7 +75,7 @@
 		
 		String toString(){
 		
-			return "nombre: ${ this.nombre } - poder: ${ this.poder } "
+			return "nombre: ${ this.nombre } - poder: ${ this.poder } ";
 		}
 	}
 	
@@ -83,7 +83,7 @@
 ## Forma corta de definir propiedades de las clases
 
 	void main(){
-		final wolverine = new Heroe( poder: "Regeneración"  ) // el new en dart es opcional de la versión 2 en adelante, en vez de var puede ser la clase Heroe, tambien un final que se parece a una cosntante
+		final wolverine = new Heroe( poder: "Regeneración"  ); // el new en dart es opcional de la versión 2 en adelante, en vez de var puede ser la clase Heroe, tambien un final que se parece a una cosntante
 		
 		print(wolverine);
 	}
@@ -100,7 +100,7 @@
 		
 		String toString(){
 		
-			return "nombre: $nombre - poder: $poder "//no es necesario el this ya que dart se da cuenta de la existencia de esos atributos
+			return "nombre: $nombre - poder: $poder "; //no es necesario el this ya que dart se da cuenta de la existencia de esos atributos
 		}
 	}
 		
@@ -116,19 +116,19 @@
 		final rawJson = '{ "nombre": "Logan", "Poder": "Regeneración" }';
 		
 		final parsedjson = json.decode( rawJson );
-		print( parsedjson ) // parsed json es un mapa
+		print( parsedjson ); // parsed json es un mapa
 
 		final wolverine = new Heroe.fromJson(parsedJson);
 
-		print(wolverine.nombre));
-		print(wolverine.poder)
+		print(wolverine.nombre);
+		print(wolverine.poder);
 	}
 
 	class Heroe{
 		stirng nombre;
 		string poder;
 
-		Heroe(this.nombre, this.poder)
+		Heroe(this.nombre, this.poder);
 		
 		Heroe.fromJson( Map parsedJson ){
 			nombre = parsedJson["nombre"];
@@ -136,6 +136,4 @@
 		}
 	}
 	
-
-
 
