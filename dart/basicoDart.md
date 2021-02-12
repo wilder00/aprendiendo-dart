@@ -13,8 +13,9 @@
 	}
 
 
-#### creando funciones con parámetros
+* creando funciones con parámetros
 
+```
 	void main(){
 	var mensaje = saludar("Hola", "fernando" );
 		print (mensaje);
@@ -23,12 +24,12 @@
 	String saludar(String texto, String nombre){
 		return "$texto $nombre"; //$ sirven para llamar a una variable declarada dentro de un string
 	}
+```
+
+* Creando funciones con parametros Bien definidos para asegurar exactitud al momento de ingresar los valores
 
 
-#### Creando funciones con parametros Bien definidos para asegurar exactitud al momento de ingresar los valores
-
-
-
+```
 	void main(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
 		print (mensaje);
@@ -37,17 +38,18 @@
 	String saludar({ String texto, String nombre }){ //Parámetro con nombre
 		return "$texto $nombre";
 	}
+```
 
+* Creando funciones tipo flechas:
 
-#### Creando funciones tipo flechas:
-
-
+```
 	void main(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
 		print (mensaje);
 	}
 
 	String saludar({ String texto, String nombre }) => "$texto $nombre";
+```
 
 
 ## Clases:
