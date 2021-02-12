@@ -15,20 +15,20 @@
 
 * creando funciones con parámetros:
 
-`
+
 	Void(){
-		var mensaje = saludar("Hola", "fernando" );
+	var mensaje = saludar("Hola", "fernando" );
 		print (mensaje);
 	}
 	
 	String saludar(String texto, String nombre){
 		return "$texto $nombre"; //$ sirven para llamar a una variable declarada dentro de un string
 	}
-`
+
 
 * Creando funciones con parametros Bien definidos para asegurar exactitud al momento de ingresar los valores
 
-`
+
 
 	Void(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
@@ -38,21 +38,17 @@
 	String saludar({ String texto, String nombre }){ //Parámetro con nombre
 		return "$texto $nombre";
 	}
-`
-	
+
 
 * Creando funciones tipo flechas:
 
 
-`
-Void(){
-	var mensaje = saludar(nombre: "fernando", texto: "Hola,");
-	print (mensaje);
-}
+	Void(){
+		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
+		print (mensaje);
+	}
 
-String saludar({ String texto, String nombre }) => "$texto $nombre";
-`
-
+	String saludar({ String texto, String nombre }) => "$texto $nombre";
 
 
 ## Clases:
