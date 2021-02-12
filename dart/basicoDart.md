@@ -15,6 +15,7 @@
 
 * creando funciones con parámetros:
 
+
 	Void(){
 		var mensaje = saludar("Hola", "fernando" );
 		print (mensaje);
@@ -26,6 +27,7 @@
 
 * Creando funciones con parametros Bien definidos para asegurar exactitud al momento de ingresar los valores
 
+
 	Void(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
 		print (mensaje);
@@ -35,7 +37,9 @@
 		return "$texto $nombre";
 	}
 	
+
 * Creando funciones tipo flechas:
+
 
 	Void(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
@@ -43,6 +47,7 @@
 	}
 	
 	String saludar({ String texto, String nombre }) => "$texto $nombre";
+
 
 
 ## Clases:
@@ -128,7 +133,7 @@
 			poder = parsedJson["poder"];
 		}
 	}
-
+	
 
 
 
