@@ -1,9 +1,9 @@
 
 
-
 ## Funciones 
 
-	Void(){
+
+	Void main(){
 		var mensaje = saludar();
 		print (mensaje);
 	}
@@ -13,10 +13,9 @@
 	}
 
 
-* creando funciones con parámetros:
+#### creando funciones con parámetros
 
-
-	Void(){
+	void main(){
 	var mensaje = saludar("Hola", "fernando" );
 		print (mensaje);
 	}
@@ -26,11 +25,11 @@
 	}
 
 
-* Creando funciones con parametros Bien definidos para asegurar exactitud al momento de ingresar los valores
+#### Creando funciones con parametros Bien definidos para asegurar exactitud al momento de ingresar los valores
 
 
 
-	Void(){
+	void main(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
 		print (mensaje);
 	}
@@ -40,10 +39,10 @@
 	}
 
 
-* Creando funciones tipo flechas:
+#### Creando funciones tipo flechas:
 
 
-	Void(){
+	void main(){
 		var mensaje = saludar(nombre: "fernando", texto: "Hola,");
 		print (mensaje);
 	}
@@ -138,29 +137,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
