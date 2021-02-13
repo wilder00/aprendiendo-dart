@@ -145,19 +145,19 @@ class Heroe{
 ## getter and setters
 
 ```
-void() main(){
+void main(){
 	final cuadrado = new Cuadrado();
 
-	Cuadrado.lado = 10;
+	cuadrado.lado = 10; // estamos usando el setter lado para dar valor a _lado
 	
 	print( cuadrado );
-
+	print( 'área: ${ cuadrado.area }' ); // obtenemos area con su getter
 }
 
 class Cuadrado{
 
 	double _lado; //con guión bajo se declara como privado la variable
-	double _area;
+	//double _area;
 
 	set lado( double valor ){
 		if( valor <= 0 ){
@@ -175,6 +175,7 @@ class Cuadrado{
 
 	toString()=>'Lado: $_lado';
 }
+
 
 
 ```
@@ -257,6 +258,7 @@ para entender los mixins es recomendable utilizar el siguiente [enlace](https://
 
 ```
 
+
 abstract class Animal{
 	
 }
@@ -289,7 +291,7 @@ class Delfin extends Mamifero with Nadador{}
 
 class Murcielago extends Mamifero with Caminante, Volador{}
 
-class Gato extends Mamifero with caminante{}
+class Gato extends Mamifero with Caminante{}
 
 class Paloma extends Ave with Caminante, Volador{}
 
@@ -305,10 +307,11 @@ void main(){
 	pato.caminar();
 	pato.nadar();
 
-	final pezVolador = new PezVolador()
-	pezVolador.volar()
+	final pezVolador = new PezVolador();
+	pezVolador.volar();
 
 }
+
 
 ```
 
@@ -361,6 +364,8 @@ void main() async {
 	//String data = httpGet("https://api.nadaasdf"); //un future que regresa un String no es compatible con un String normal, a menos que se le ponga un Await que resilverá el Future para que regrese un string normal
 	String data = await httpGet("https://api.nadaasdf"); //await solo puede funcionar si está dentro de un async
 	
+	print( data );
+  	print('Ultima línea');
 }
 
 
